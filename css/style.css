@@ -7,23 +7,45 @@
 
 body,
 html {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow-X: hidden;
   font-family: "Poppins", sans-serif;
 }
 
 .img-fluid {
-  width: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 5px;
-  display: block;
 }
 
-.portrate {
-  width: 100px;
+.img-gallery {
+  width: 1400px;
+  margin: 20px auto;
+  -moz-columns: 4;
+       columns: 4;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
-.square {
-  height: 200px;
+@media (max-width: 991px) {
+  .img-gallery {
+    -moz-columns: 3;
+         columns: 3;
+  }
+}
+@media (max-width: 660px) {
+  .img-gallery {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media (max-width: 440px) {
+  .img-gallery {
+    -moz-columns: 1;
+         columns: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
